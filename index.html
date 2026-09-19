@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aguas frescas Névé: ocho sabores preparados al momento. Pide por WhatsApp.">
+  <meta name="theme-color" content="#203536">
+  <title>Névé | Aguas frescas</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Névé | Aguas frescas">
+  <meta property="og:description" content="Ocho aguas frescas preparadas al momento. Pide por WhatsApp.">
+  <meta property="og:image" content="sabores-neve.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
+</head>
+<body
+  data-whatsapp="52100000000"
+  data-message="¡Hola! Me gustaría conocer las Aguas Frescas Névé.">
+
+<a class="skip-link" href="#sabores">Saltar al menú de sabores</a>
+
+<header class="site-header">
+  <a class="brand" href="#inicio" aria-label="Névé, ir al inicio">
+    <span>NÉVÉ</span><small>ARTE HELADO</small>
+  </a>
+
+  <nav aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a>
+    <a href="#sabores">Menú</a>
+    <a href="#nosotros">La experiencia</a>
+  </nav>
+
+  <a class="contact-pill wa-link" href="#">Pedir por WhatsApp <span aria-hidden="true">↗</span></a>
+</header>
+
+
+<main>
+  <!-- ==========================================
+       1. HERO PRINCIPAL (#inicio)
+       Presentación de la marca, encabezado y llamadas a la acción.
+       ========================================== -->
+  <section class="hero" id="inicio">
+
+    <!-- Fotografía de fondo a sangre. El degradado que la funde con el
+         texto se aplica en CSS (.hero::before), no aquí. -->
+    <div class="hero-media">
+      <img
+        src="coleccion.jpg"
+        alt="Los ocho sabores de aguas frescas Névé"
+        width="2400" height="1340"
+        decoding="async"
+        fetchpriority="high">
+    </div>
+
+    <div class="hero-copy">
+      <p class="eyebrow"><i></i> Mi pausa fuera de casa</p>
+
+      <h1>Un toque de arte para tu pausa <em>helada.</em></h1>
+
+      <p class="hero-text">
+      
+      </p>
+
+      <div class="hero-actions">
+        <a class="button button-dark" href="#sabores">Ver menú de sabores <span>↓</span></a>
+        <a class="text-link wa-link" href="#">Hacer un pedido</a>
+      </div>
+
+      <div class="hero-note">
+        <span class="sparkle">✦</span> Sabores auténticos, momentos únicos
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==========================================
+       2. CARRUSEL INFORMATIVO (QUICK INFO)
+       Diapositivas dinámicas con flechas y puntos de navegación.
+       ========================================== -->
+  <section class="quick-info" aria-label="Ventajas de Névé">
+    <div class="quick-info-track">
+      <article class="quick-info-slide active">
+        <b>8 sabores</b>
+        <span>para elegir tu momento</span>
+      </article>
+
+      <article class="quick-info-slide">
+        <b>Pedido directo</b>
+        <span>consulta y pide por WhatsApp</span>
+      </article>
+
+      <article class="quick-info-slide">
+        <b>Para compartir</b>
+        <span>en una tarde rica o un antojo</span>
+      </article>
+    </div>
+
+    <div class="quick-info-controls">
+      <button class="quick-info-arrow" type="button" data-direction="previous" aria-label="Ver ventaja anterior">←</button>
+
+      <div class="quick-info-dots" role="tablist" aria-label="Seleccionar ventaja">
+        <button class="active" role="tab" aria-selected="true" aria-label="Ver ventaja 1"></button>
+        <button role="tab" aria-selected="false" aria-label="Ver ventaja 2"></button>
+        <button role="tab" aria-selected="false" aria-label="Ver ventaja 3"></button>
+      </div>
+
+      <button class="quick-info-arrow" type="button" data-direction="next" aria-label="Ver siguiente ventaja">→</button>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       3. MENÚ Y GALERÍA DE SABORES (#sabores)
+       Incluye la galería fotográfica y el selector dinámico de sabores.
+       ========================================== -->
+  <section class="flavors-section" id="sabores">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow"><i></i> Nuestro menú</p>
+        <h2>Hoy se antoja<br>algo de Névé.</h2>
+      </div>
+      <p>Elige el sabor que se te antoja. Pronto podrás encontrar aquí nuevas creaciones de la casa.</p>
+    </div>
+
+    <!-- Galería fotográfica interactiva (una foto por diapositiva) -->
+<div class="flavor-gallery" aria-label="Galería de Névé">
+  <div class="flavor-gallery-track">
+    <figure class="flavor-gallery-slide active" aria-hidden="false">
+      <img src="sabores-neve.jpg" alt="Las ocho aguas frescas Névé" width="900" height="700" decoding="async">
+      <figcaption>
+        <span>La colección Névé</span>
+        <strong>Ocho formas de refrescar tu día</strong>
+      </figcaption>
+    </figure>
+
+    <figure class="flavor-gallery-slide">
+      <img src="horchata.jpg" alt="Producto Horchata" width="900" height="700" loading="lazy" decoding="async">
+      <figcaption>
+        <span>Horchata</span>
+        <strong>Una pausa rica, suave y especial</strong>
+      </figcaption>
+    </figure>
+
+    <figure class="flavor-gallery-slide">
+      <img src="jamaica.jpg" alt="Producto Jamaica" width="900" height="700" loading="lazy" decoding="async">
+      <figcaption>
+        <span>Jamaica</span>
+        <strong>Sabor fresco y natural</strong>
+      </figcaption>
+    </figure>
+
+    <figure class="flavor-gallery-slide">
+      <img src="taro.jpg" alt="Producto Taro" width="900" height="700" loading="lazy" decoding="async">
+      <figcaption>
+        <span>Taro</span>
+        <strong>Cremoso y diferente</strong>
+      </figcaption>
+    </figure>
+
+    <figure class="flavor-gallery-slide">
+      <img src="pistache.jpg" alt="Producto Pistache" width="900" height="700" loading="lazy" decoding="async">
+      <figcaption>
+        <span>Pistache</span>
+        <strong>El favorito de la casa</strong>
+      </figcaption>
+    </figure>
+
+    <figure class="flavor-gallery-slide">
+      <img src="limon.jpg" alt="Producto Limón" width="900" height="700" loading="lazy" decoding="async">
+      <figcaption>
+        <span>Limón</span>
+        <strong>Clásico y refrescante</strong>
+      </figcaption>
+    </figure>
+
+    <figure class="flavor-gallery-slide">
+      <img src="nuez.jpg" alt="Producto Nuez" width="900" height="700" loading="lazy" decoding="async">
+      <figcaption>
+        <span>Nuez</span>
+        <strong>Sabor tradicional</strong>
+      </figcaption>
+    </figure>
+
+    <figure class="flavor-gallery-slide">
+      <img src="cafe.jpg" alt="Producto Café" width="900" height="700" loading="lazy" decoding="async">
+      <figcaption>
+        <span>Café</span>
+        <strong>Para recargar tu energía</strong>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="flavor-gallery-controls">
+    <button class="flavor-gallery-arrow" type="button" data-gallery-direction="previous" aria-label="Ver foto anterior">←</button>
+
+    <div class="flavor-gallery-dots" role="tablist" aria-label="Seleccionar foto">
+      <button class="active" role="tab" aria-selected="true" aria-label="Ver foto 1"></button>
+      <button role="tab" aria-selected="false" aria-label="Ver foto 2"></button>
+      <button role="tab" aria-selected="false" aria-label="Ver foto 3"></button>
+      <button role="tab" aria-selected="false" aria-label="Ver foto 4"></button>
+      <button role="tab" aria-selected="false" aria-label="Ver foto 5"></button>
+      <button role="tab" aria-selected="false" aria-label="Ver foto 6"></button>
+      <button role="tab" aria-selected="false" aria-label="Ver foto 7"></button>
+      <button role="tab" aria-selected="false" aria-label="Ver foto 8"></button>
+    </div>
+
+
+    <button class="flavor-gallery-arrow" type="button" data-gallery-direction="next" aria-label="Ver siguiente foto">→</button>
+  </div>
+</div>
+    <!-- Layout interactivo de sabores (Tabs + Ficha) -->
+    <div class="flavor-layout">
+      <div class="flavor-menu" role="tablist" aria-label="Sabores de Névé">
+        
+          <button 
+            class="flavor-option active" 
+            role="tab" 
+            aria-selected="true" 
+            data-product='{&quot;slug&quot;:&quot;horchata&quot;,&quot;name&quot;:&quot;Horchata&quot;,&quot;note&quot;:&quot;suave y cremosa&quot;,&quot;tag&quot;:&quot;El clásico que abraza&quot;,&quot;description&quot;:&quot;Cremosa, suave y con ese sabor que convierte cualquier pausa en un momento rico.&quot;,&quot;color&quot;:&quot;#f2dfb6&quot;,&quot;accent&quot;:&quot;#a96f3c&quot;,&quot;symbol&quot;:&quot;◒&quot;,&quot;price&quot;:&quot;$35 MXN&quot;}'
+          >
+            01 
+            <span>Horchata</span>
+            <b>↗</b>
+          </button>
+        
+          <button 
+            class="flavor-option " 
+            role="tab" 
+            aria-selected="false" 
+            data-product='{&quot;slug&quot;:&quot;taro&quot;,&quot;name&quot;:&quot;Taro&quot;,&quot;note&quot;:&quot;dulce y diferente&quot;,&quot;tag&quot;:&quot;Un giro inesperado&quot;,&quot;description&quot;:&quot;Un sabor delicado y original, con una personalidad que no pasa desapercibida.&quot;,&quot;color&quot;:&quot;#dfd0f0&quot;,&quot;accent&quot;:&quot;#8c61ab&quot;,&quot;symbol&quot;:&quot;✿&quot;,&quot;price&quot;:&quot;$35 MXN&quot;}'
+          >
+            02 
+            <span>Taro</span>
+            <b>↗</b>
+          </button>
+        
+          <button 
+            class="flavor-option " 
+            role="tab" 
+            aria-selected="false" 
+            data-product='{&quot;slug&quot;:&quot;nuez&quot;,&quot;name&quot;:&quot;Nuez&quot;,&quot;note&quot;:&quot;intensa y reconfortante&quot;,&quot;tag&quot;:&quot;Para saborear despacio&quot;,&quot;description&quot;:&quot;Notas cálidas y una textura que hace de cada trago un pequeño gusto.&quot;,&quot;color&quot;:&quot;#e9d4b8&quot;,&quot;accent&quot;:&quot;#a06d3d&quot;,&quot;symbol&quot;:&quot;◉&quot;,&quot;price&quot;:&quot;$35 MXN&quot;}'
+          >
+            03 
+            <span>Nuez</span>
+            <b>↗</b>
+          </button>
+        
+          <button 
+            class="flavor-option " 
+            role="tab" 
+            aria-selected="false" 
+            data-product='{&quot;slug&quot;:&quot;limon&quot;,&quot;name&quot;:&quot;Limón&quot;,&quot;note&quot;:&quot;vibrante y cítrica&quot;,&quot;tag&quot;:&quot;Frescura que despierta&quot;,&quot;description&quot;:&quot;Brillante, ligera y llena de energía. El toque refrescante para cualquier hora.&quot;,&quot;color&quot;:&quot;#e3f0ae&quot;,&quot;accent&quot;:&quot;#7e9e36&quot;,&quot;symbol&quot;:&quot;◐&quot;,&quot;price&quot;:&quot;$35 MXN&quot;}'
+          >
+            04 
+            <span>Limón</span>
+            <b>↗</b>
+          </button>
+        
+          <button 
+            class="flavor-option " 
+            role="tab" 
+            aria-selected="false" 
+            data-product='{&quot;slug&quot;:&quot;pistache&quot;,&quot;name&quot;:&quot;Pistache&quot;,&quot;note&quot;:&quot;suave y especial&quot;,&quot;tag&quot;:&quot;Una joyita verde&quot;,&quot;description&quot;:&quot;Cremoso, delicado y con un carácter sutil que te invita a repetir.&quot;,&quot;color&quot;:&quot;#d4e6bf&quot;,&quot;accent&quot;:&quot;#6f9143&quot;,&quot;symbol&quot;:&quot;❋&quot;,&quot;price&quot;:&quot;$35 MXN&quot;}'
+          >
+            05 
+            <span>Pistache</span>
+            <b>↗</b>
+          </button>
+        
+          <button 
+            class="flavor-option " 
+            role="tab" 
+            aria-selected="false" 
+            data-product='{&quot;slug&quot;:&quot;jamaica&quot;,&quot;name&quot;:&quot;Jamaica&quot;,&quot;note&quot;:&quot;floral y chispeante&quot;,&quot;tag&quot;:&quot;El sabor que florece&quot;,&quot;description&quot;:&quot;Una explosión floral y refrescante, con un color que alegra la mesa.&quot;,&quot;color&quot;:&quot;#f1c7d3&quot;,&quot;accent&quot;:&quot;#ad4766&quot;,&quot;symbol&quot;:&quot;✺&quot;,&quot;price&quot;:&quot;$35 MXN&quot;}'
+          >
+            06 
+            <span>Jamaica</span>
+            <b>↗</b>
+          </button>
+        
+          <button 
+            class="flavor-option " 
+            role="tab" 
+            aria-selected="false" 
+            data-product='{&quot;slug&quot;:&quot;cafe&quot;,&quot;name&quot;:&quot;Café&quot;,&quot;note&quot;:&quot;aromática y profunda&quot;,&quot;tag&quot;:&quot;Para el antojo intenso&quot;,&quot;description&quot;:&quot;Aroma irresistible y un perfil profundo para quienes disfrutan lo auténtico.&quot;,&quot;color&quot;:&quot;#dec7b5&quot;,&quot;accent&quot;:&quot;#77503c&quot;,&quot;symbol&quot;:&quot;✦&quot;,&quot;price&quot;:&quot;$35 MXN&quot;}'
+          >
+            07 
+            <span>Café</span>
+            <b>↗</b>
+          </button>
+        
+          <button 
+            class="flavor-option " 
+            role="tab" 
+            aria-selected="false" 
+            data-product='{&quot;slug&quot;:&quot;pina&quot;,&quot;name&quot;:&quot;Piña&quot;,&quot;note&quot;:&quot;tropical y jugosa&quot;,&quot;tag&quot;:&quot;Una escapada tropical&quot;,&quot;description&quot;:&quot;Dulce, luminosa y tropical. Un sorbo que sabe a sol y buena compañía.&quot;,&quot;color&quot;:&quot;#ffe69e&quot;,&quot;accent&quot;:&quot;#cc8b27&quot;,&quot;symbol&quot;:&quot;✹&quot;,&quot;price&quot;:&quot;$35 MXN&quot;}'
+          >
+            08 
+            <span>Piña</span>
+            <b>↗</b>
+          </button>
+        
+      </div>
+
+      <article 
+        class="flavor-feature" 
+        style="--flavor-bg:#f2dfb6;--flavor-accent:#a96f3c" 
+        aria-live="polite"
+      >
+        <div class="flavor-art" id="flavorArt">
+          <span class="art-fruit" id="artFruit" aria-hidden="true">◒</span>
+          <div class="bottle">
+            <div class="cap"></div>
+            <div class="bottle-label">
+              <small>NÉVÉ</small>
+              <strong id="labelFlavor">HORCHATA</strong>
+              <span id="labelNote">suave y cremosa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flavor-info">
+          <p id="flavorNumber">01 / 08</p>
+          <h3 id="flavorName">Horchata</h3>
+          <span class="flavor-tag" id="flavorTag">El clásico que abraza</span>
+          <p id="flavorDescription">Cremosa, suave y con ese sabor que convierte cualquier pausa en un momento rico.</p>
+          <p class="product-price" id="flavorPrice">$35 MXN</p>
+          <a class="text-link wa-link" href="#">Quiero probarla <span>↗</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. SOBRE LA MARCA (#nosotros)
+       Sección de identidad, historia y cifras destacadas.
+       ========================================== -->
+  <section class="neve-experience" id="nosotros">
+
+    <div class="experience-grid">
+
+        <!-- HISTORIA -->
+        <div class="experience-story">
+
+            <span class="experience-label">
+                NUESTRA HISTORIA
+            </span>
+
+            <h2>
+                La experiencia Névé
+            </h2>
+
+            <p>
+                Névé nace de la idea de convertir algo tan cotidiano como
+                una bebida en una experiencia que se disfrute con todos
+                los sentidos.
+            </p>
+
+            <p>
+                Cada sabor, cada detalle y cada elemento de nuestra
+                identidad busca transmitir frescura, calidad y una
+                personalidad propia.
+            </p>
+
+            <p>
+                Más que una bebida, buscamos crear momentos que quieras
+                volver a disfrutar.
+            </p>
+
+        </div>
+
+
+        <!-- CARRUSEL DE LOGOS -->
+        <div class="experience-logos" aria-roledescription="carrusel" aria-label="Identidad visual de Névé">
+
+            <div class="logos-carousel">
+
+                <button
+                    type="button"
+                    class="carousel-arrow carousel-prev"
+                    data-carousel-direction="previous"
+                    aria-label="Logo anterior">
+                    &#10094;
+                </button>
+
+                <div class="logos-track-container">
+
+                    <div class="logos-track">
+
+                        <div class="logo-slide active" aria-hidden="false">
+                            <img
+                                src="logo1.png"
+                                alt="Logotipo principal de Névé"
+                                width="430" height="260"
+                                decoding="async">
+                        </div>
+
+                        <div class="logo-slide" aria-hidden="true">
+                            <img
+                                src="logo2.png"
+                                alt="Versión alterna del logotipo de Névé"
+                                width="430" height="260"
+                                loading="lazy"
+                                decoding="async">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="carousel-arrow carousel-next"
+                    data-carousel-direction="next"
+                    aria-label="Siguiente logo">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="carousel-dots" role="tablist" aria-label="Elegir logo">
+
+                <button
+                    type="button"
+                    class="carousel-dot active"
+                    role="tab"
+                    aria-selected="true"
+                    aria-label="Mostrar logo 1">
+                </button>
+
+                <button
+                    type="button"
+                    class="carousel-dot"
+                    role="tab"
+                    aria-selected="false"
+                    aria-label="Mostrar logo 2">
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  <!-- ==========================================
+       5. LLAMADA A LA ACCIÓN FINAL (CTA)
+       Sección de cierre comercial para pedidos directos.
+       ========================================== -->
+  <section class="cta">
+    <div>
+      <p class="eyebrow"><i></i> Pedido rápido</p>
+      <h2>Tu próximo sabor<br>favorito está aquí.</h2>
+    </div>
+    <a class="button button-light wa-link" href="#">Pedir por WhatsApp <span>↗</span></a>
+  </section>
+</main>
+
+<footer>
+  <a class="brand" href="#inicio">
+    <span>NÉVÉ</span><small>ARTE HELADO</small>
+  </a>
+
+  <p>Sabores auténticos, momentos únicos.</p>
+
+  <a href="#inicio">Volver arriba ↑</a>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
