@@ -615,4 +615,14 @@ footer p {
     order: 3;
     width: 100%;
   }
+   .coverage-note {
+  display: inline-flex;
+  margin: 18px 0 0;
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: rgba(255, 253, 247, .6);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
 }
